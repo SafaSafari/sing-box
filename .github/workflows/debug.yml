@@ -177,7 +177,7 @@ jobs:
       GOARM: ${{ matrix.goarm }}
       GOMIPS: ${{ matrix.gomips }}
       CGO_ENABLED: 0
-      TAGS: with_clash_api,with_quic
+      TAGS: with_grpc,with_utls,with_gvisor,with_ech
     steps:
       - name: Checkout
         uses: actions/checkout@v3
